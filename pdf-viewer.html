@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/pdf-viewer.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;800&display=swap" rel="stylesheet"> 
+
+        <title>Parksonic | PDF Viewer</title>
+</head>
+<body>
+
+    <div class="top-bar">
+        <img src="assets/ps-logo-white.png" alt="Parksonic Logo">
+        <button class="btn" id="prev-page">
+            <span class="material-icons">keyboard_arrow_left</span> Prev Page
+        </button>
+        <button class="btn" id="next-page">
+            Next Page <span class="material-icons">keyboard_arrow_right</span>
+        </button>
+        <span class="page-info">
+            Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+    </div>
+
+    <canvas id="pdf-render"></canvas>
+
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.top-bar {
+    background: var(--one-color);
+    color: white;
+    padding: 1rem;
+    position:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.top-bar img {
+    width: 250px;
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: var(--yellow-color);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+}
+
+.btn:hover {
+    opacity: 0.9;
+
+}
+
+.page-info {
+    margin-left: 1rem;
+}
+
+.error {
+    background: var(--red-color);
+    color: white;
+    padding: 1rem;
+}
