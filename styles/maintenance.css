@@ -23,7 +23,19 @@ body {
     background-color: var(--three-color);
     font-family: "Montserrat", sans-serif;
     color: var(--one-color);
+    /* position: relative;
+    padding-bottom: 172px; */
 }
+
+main {
+    max-height:calc(100vh - 164.22px - 171.11px);
+}
+
+/* footer {
+    position: absolute;
+    bottom:0;
+    width:100%;
+} */
 
 a {
     color: var(--yellow-color);
@@ -164,7 +176,7 @@ header {
     width: 250px;
 }
 
-/**BANNER**/
+/*BANNER*/
 
 .solutions_banner {
     height:30vh;
@@ -296,7 +308,6 @@ header {
 .cta {
     background-color: var(--two-color);
     color:var(--three-color);
-    position: absolute;
     width: 100%;
     bottom:5%;
     
@@ -306,7 +317,6 @@ header {
     width:80%;
     margin: 0 auto;
     text-align:center;
-    display:flex;
     padding: 30px 0px;
     justify-content: center;
 }
@@ -338,13 +348,10 @@ header {
 }
 
 /*RIGHTS*/
-
 .rights {
     background: var(--three-color);
-    position: absolute;
     width: 100%;
     bottom:0;
-    
 }
 
 .rights a {
