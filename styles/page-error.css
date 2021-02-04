@@ -1,0 +1,85 @@
+/* 404 PAGE */
+#error-page {
+    padding: 50px 0 0 0;
+}
+
+#error-page .error-info {
+    margin-top:20px;
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+#error-page .error-info p {
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+#error-page .error-x {
+    position: relative;
+    margin: 0 auto;
+	width: 174px;
+	height: 200px;
+	transform-origin: center center;
+	animation: total .5s cubic-bezier(1,1.95,.1,.5) forwards; 
+}
+
+#error-page .error-x #cara1{
+	opacity: 0.5;
+	background-color: yellow;
+	position: absolute;
+	width: 59px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -29px;
+	z-index: 20;
+	transform-origin: center bottom;
+	animation: cara_uno .5s 1s forwards;
+}
+
+#error-page .error-x #cara2{
+	opacity: 0.5;
+	background-color: rgb(240, 240, 52);
+	position: absolute;
+	width: 59px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -29px;
+	z-index: 10;
+	transform-origin: center bottom;
+	animation: cara_dos .5s 2s forwards;
+}
+
+#error-page .error-x #cara3{
+	opacity: 0.5;
+	background-color: rgb(237, 237, 86);
+	position: absolute;
+	width: 59px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin-top: -0px;
+	margin-left: -29px;
+	z-index: 20;
+	transform-origin: center top;
+	animation: cara_tres .5s 2s forwards;
+}
+
+#error-page .error-x #cara4{
+	opacity: 0.5;
+	background-color: var(--yellow-color);
+	position: absolute;
+	width: 59px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin-top: -0px;
+	margin-left: -29px;
+	z-index: 10;
+	transform-origin: center top;
+	animation: cara_cuatro .5s 1s forwards;
+}

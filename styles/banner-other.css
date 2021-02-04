@@ -1,0 +1,46 @@
+/** BANNER OTHER page **/
+
+.other_banner {
+    height:30vh;
+    width: 100vw;
+    position:relative;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-image: url("../assets/page-bg.jpg");
+    z-index:1;
+}
+
+.other_banner-content {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.90);
+    background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0) 100%);
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    text-align:center;
+
+}
+
+.other_banner-content span {
+    color: var(--three-color);
+    padding: 5% 0 0;
+    font-size: 60px;
+
+}
+
+.other_banner-content h2 {
+    color: var(--three-color);
+    font-weight:100;
+    margin: 10px 0;
+}
+
+.other_banner-content p {
+    color: var(--three-color);
+    font-weight:100;
+    width: 80%;
+}

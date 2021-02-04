@@ -1,0 +1,125 @@
+/*** FOOTER ***/
+
+footer {
+    background-color: var(--four-color);
+    color:var(--white-color);
+    font-weight: 400;
+    font-size: 13px;
+    color:var(--six-color);
+}
+
+/*** FOOTER cta ***/
+
+footer .cta {
+    background-color: var(--two-color);
+    color:var(--three-color);
+    
+}
+
+footer .cta-content {
+    width:80%;
+    margin: 0 auto;
+    text-align:center;
+    display:block;
+    padding: 30px 0px;
+    justify-content: center;
+}
+
+footer .cta-content h1 {
+    margin-top: 10px;
+    float:left;
+    font-weight:400;
+    font-size: 24px;
+    margin-bottom: 15px;;
+}
+
+footer .cta-content a button {
+    padding: 10px 20px 20px;;
+    background-color: var(--yellow-color);
+    border:none;
+    color:var(--one-color);
+    transition: all .5s ease-in-out;
+    width: 100%;
+}
+footer .cta-content a button span {
+    position:relative;
+    top:6px;
+    right:5px;
+}
+
+footer .cta-content a button:hover {
+    background-color: var(--red-color);
+    color: var(--three-color);
+}
+
+/*** FOOTER content ***/
+
+footer .footer-content {
+    width:80%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer .footer-links {
+    padding-top: 30px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+footer .footer-links:last-child {
+    padding-bottom:30px;
+}
+
+footer .footer-links a button {
+    margin: 10px 0;
+    padding: 15px 10px 15px;
+    background-color: var(--yellow-color);
+    border:none;
+    color:var(--one-color);
+    transition: all .5s ease-in-out;
+    width:100%;
+}
+
+footer .footer-links a button:hover {
+    background-color: var(--red-color);
+    color: var(--three-color);
+}
+
+footer .footer-links a button span {
+    font-size: 18px;
+    position:relative;
+    top:4px;
+    right:8px;
+    
+}
+
+footer .footer-links h4 {
+    color: var(--two-color);
+}
+
+footer .footer-links a {
+    display: block;
+    text-decoration:none;
+    color: var(--six-color);
+    margin: 0 auto;
+    
+}
+
+footer .rights {
+    background: var(--three-color);
+    
+}
+
+footer .rights a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+footer .rights-content {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align:center;
+    font-size: 12px;
+}

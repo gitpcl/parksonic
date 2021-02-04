@@ -1,0 +1,45 @@
+/*** BANNER HOME section ***/
+
+#home-page .banner {
+    height:calc(100vh - 86px - 116px);
+    width: 100vw;
+    position:relative;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-image: url("../assets/banner-bg.jpg");
+    z-index:1;
+}
+
+#home-page .banner-content {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.90);
+    background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0) 100%);
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    text-align:center;
+    padding: 0 20px;
+
+}
+
+#home-page .banner-content span {
+    color: var(--three-color);
+    padding: 15% 0 5%;
+    font-size: 60px;
+
+}
+
+#home-page .banner-content h2 {
+    color: var(--three-color);
+    font-weight:100;
+    padding: 5% 0 5%;
+}
+#home-page .banner-content p {
+    color: var(--three-color);
+    font-weight:100;
+}

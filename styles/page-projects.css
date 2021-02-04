@@ -1,0 +1,128 @@
+/*** PROJECTS PAGE ***/
+
+#projects-page .banner {
+    height:calc(60vh - 86px - 116px);
+    width: 100vw;
+    position:relative;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-image: url("../assets/page-bg.jpg");
+    z-index:1;
+}
+
+#projects-page .banner-content {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.80);
+    background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0) 100%);
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    text-align:center;
+
+}
+
+#projects-page .banner-content span {
+    color: var(--three-color);
+    padding: 8% 0 1%;
+    font-size: 60px;
+
+}
+
+#projects-page .banner-content h2 {
+    color: var(--three-color);
+    font-weight:100;
+    margin-bottom: 10px;
+}
+#projects-page .banner-content p {
+    color: var(--three-color);
+    font-weight:100;
+}
+
+/*** PROJECTS PAGE | COUNTER section***/
+
+#projects-page .counter-content {
+    padding: 20px;
+    text-align: center;
+}
+
+#projects-page .counter-content .counters {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    background: var(--four-color);
+    padding: 50px 0;
+    
+}
+
+#projects-page .counter-content .counters:hover {
+    background: var(--yellow-color);
+}
+
+#projects-page .counter-content .counters h4 {
+    color:black;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 400;
+    
+}
+
+/*** PROJECTS PAGE | PROJECTS section ***/
+
+#projects-page .projects-content {
+    text-align:center;
+    color: var(--one-color);
+}
+
+#projects-page .projects-content h1 {
+    margin-top:20px;
+    font-weight:400;
+}
+
+#projects-page .projects-content .cards .card {
+    background: var(--three-color);
+    margin: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#projects-page .projects-content .cards .card img {
+    filter: grayscale(1);
+
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+    grid-column: 1;
+    grid-row: 1;
+    background-color:var(--red-color);
+    position: relative;
+    overflow: hidden;
+}
+
+#projects-page .projects-content .cards .card img:hover {
+    filter: grayscale(0);
+}
+
+#projects-page .projects-content .cards .card a {
+    text-decoration: none;
+}
+
+#projects-page .projects-content .cards .card a h3 {
+    color: black;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#projects-page .projects-content .cards .card .counters .counter {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#projects-page .projects-content .cards .card .counters p {
+    margin-bottom: 10px;
+}

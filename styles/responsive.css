@@ -1,13 +1,173 @@
-@media (max-width: 768px) {
-    .cards-content {
-        grid-template-columns: 1fr;
+@media (min-width: 600px) {
+
+    #home-page .banner {
+        height:calc(100vh - 164px);
     }
 
-    .footer-content {
-        grid-template-columns: 1fr 1fr;
+    #home-page .banner-content span {
+        padding: 15% 0 1%;
+    }
+    
+    #home-page .banner-content h2 {
+        padding: 1% 0 1%;
     }
 
-    .explore_cards {
-        grid-template-columns: 1fr;
+    #home-page .solutions a .index_card {
+        height:450px;
     }
+
+    #home-page a .index_card {
+        margin:5px;
+    }
+
+    #home-page .index_cards-content {
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #home-page .about {
+        padding: 20px 0;
+    }
+
+    #home-page .about .about-content {
+        width: 80%;
+        display:flex;
+        margin: 0 auto;
+        padding: 30px 0;
+        
+    }
+
+    #projects-page .counter-content {
+        width:80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    #projects-page .projects-content {
+        width:80%;
+        margin: 0 auto;
+    }
+
+    #projects-page .projects-content .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 20px;
+    }
+
+    #projects-page .projects-content .cards .card {
+        margin: 20px 0 0 20px;
+    }
+
+    #about-page .about_banner-content p {
+        width: 500px;
+    }
+
+    #home-page .solutions button{
+        position: relative;
+        bottom:0;
+    }
+
+    #about-page .story {
+        width: 100%;
+        margin:0 auto;
+    }
+
+    #about-page .whatWeDo {
+        display: grid;
+        grid-template-columns:  1fr [main-end] 300px;
+        width: 80%;
+        margin: 10px auto;
+        gap: 20px;
+    }
+
+    #about-page .whatWeDo .whatWeDo-content {
+        margin:0;
+        width:100%;
+    }
+
+    #about-page .whatWeDo .info-products {
+        margin:0;
+        width: 80%;
+    }
+
+    #about-page .whatWeDo .info-products img {
+        margin-top: 20%;
+    }
+
+    #about-page .explore .explore-content .explore_cards {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        margin: 50px 0;
+    }
+
+    #resources-page .resources_banner-content span {
+        padding: 5% 0 0;
+    
+    }
+
+    #resources-page .resources-info {
+        width: 80%;
+        max-width: 300rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+    #product-page .product-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #product-page .product-wrapper .product-img img {
+        width: 300px;
+        padding: 20px;
+    }
+
+    #solutions-page a .index_card {
+        margin:5px;
+    }
+
+    #solutions-page .index_cards-content {
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+
+    footer .cta-content {
+        display:flex;
+        justify-content: space-evenly;
+        width: 80%;
+
+    }
+
+    footer .cta-content h1 {
+        font-size: 30px;
+    }
+
+    footer .cta-content button {
+        width: 20%;
+    }
+
+    footer .footer-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    footer .footer-links {
+        font-size: 14px;
+    }
+
 }

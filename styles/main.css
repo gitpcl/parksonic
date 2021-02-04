@@ -9,7 +9,6 @@
     --red-color:#CA4A44;
     --green-color:#06B94B;
     --yellow-color:#EFD901;
-
 }
 
 * {
@@ -25,8 +24,15 @@ body {
     color: var(--one-color);
 }
 
+main {
+    flex-grow:1;
+    background: white;
+}
+
 a {
     color: var(--red-color);
+    text-decoration:none;
+    cursor:pointer;
 }
 
 h3 {
@@ -37,241 +43,49 @@ h4 {
     margin-bottom: 10px;
 }
 
-/*HEADER*/
+/*** CARDS ***/
 
-header {
-    background-color:var(--two-color);
-}
-
-
-#header-logo {
-    padding: 20px 0 0;
-    width:200px;
-}
-
-/*HEADER*/
-/*MAIN NAV*/
-
-.header {
-    width:80%;
+#home-page .index_cards-content {
+    width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 2px solid rgba(250,250,250,0.05);
-}
-
-.logo {
-    text-align:left;
-    padding: 15px 0;
-}
-
-.top-header img {
-    width: 150px;
-}
-
-.links {
-    text-align: right;
-    padding: 35px 0;
-}
-
-.links button {
-    background: transparent;
-    border: none;
-    transition: all .5s ease-in-out;
-}
-
-
-
-.links button span {
-    color:var(--four-color);
-    font-size: 40px;
-}
-
-/*NAV SLIDER*/
-
-.navbar {
-    position:fixed;
-    top:0;
-    left:-280px;
-    width:280px;
-    height:100%;
-    background: var(--two-color);
-    border: 2px solid var(--two-color);
-    box-shadow: 0 0 10px 5px rgba(0,0,0,.25);
-    opacity:0;
-    transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
-    z-index:10;
-}
-
-.navbar-open {
-    left:0;
-    opacity:1;
-
-}
-
-.navbar_link {
-    display:flex;
-    align-items:center;
-    background: #212121;
-    color:var(--three-color);
-    padding:12px;
-    text-decoration: none;
-    font-weight:400;
-    font-size:0.85rem;
-    border-bottom: 1px solid var(--one-color);
-}
-
-.navbar_link .material-icons {
-    margin-right:12px;
-}
-
-.navbar_link:hover {
-    background: var(--yellow-color);
-    color: var(--one-color);
-}
-
-#logo_slider {
-    margin: 20px auto;
-    display:flex;
-    justify-content: center;
-    width: 250px;
-}
-
-/**NOTICE**/
-
-.covid {
-    background-color: var(--yellow-color);
-    padding: 10px 0px;
-}
-
-.warning {
-    width: 80%;
-    font-weight: 400;
-    text-align:center;
-    margin: 0 auto;
-
-}
-
-.warning a {
-    color:var(--one-color);
-    text-decoration:none;
-}
-
-.warning span {
-    color:var(--one-color);
-    position:relative;
-    top:7px;
-    right: 5px;
-}
-
-/**BANNER**/
-
-.banner {
-    height:82vh;
-    width: 100vw;
-    position:relative;
-    background-size:cover;
-    background-position: 50% 50%;
-    background-image: url("../assets/banner-bg.jpg");
-    z-index:1;
-}
-
-.banner-content {
-    position:absolute;
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    background: rgba(0,0,0,0.90);
-    background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0) 100%);
-    display:flex;
-    align-items: center;
-    justify-self: center;
-    flex-direction: column;
-    text-align:center;
-
-}
-
-.banner-content span {
-    color: var(--three-color);
-    padding: 13% 0 0;
-    font-size: 60px;
-
-}
-
-.banner-content h2 {
-    color: var(--three-color);
-    font-weight:100;
-    margin-bottom: 10px;
-}
-.banner-content p {
-    color: var(--three-color);
-    font-weight:100;
-}
-
-/*SOLUTIONS*/
-
-.solutions {
-    text-align:center;
-    color: var(--one-color);
-}
-
-.solutions h1 {
-    margin-top:20px;
-    font-weight:400;
-}
-
-.solutions p {
-    color: var(--two-color);
-}
-
-
-/*CARDS*/
-
-.index_cards-content {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap:10px;
     padding: 20px auto;
 }
 
-.index_card {
-    padding: 20px 10px;
-    align-items: center;
-    background-color: var(--font-color);
+#home-page a .index_card {
     position: relative;
-    text-align:center;
-    border-radius: 20px;
-    cursor:pointer;
-    margin: 30px 0;
-    
+
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 23px 0px;
+    border-radius: 15px;
+    margin:30px;
 }
 
-.index_card:hover {
+#home-page .index_card:hover {
     background-color: var(--nav-color);
 }
 
-.index_card img {
+#home-page .index_card img {
     width: 100%;
     height:200px;
-    margin-bottom: 10px;
 }
 
-.index_card h3 {
+#home-page .index_card h3 {
     color: var(--two-color);
     font-weight:400;
-    text-align:left;
-    margin:10px 0;
+    padding: 0 20px;
 }
 
-.index_card p {
-    text-align:left;
+#home-page .index_card p {
     color: var(--five-color);
 }
 
-#index_card {
+#home-page #index_card {
     padding: 20px 10px;
 
     background-color: var(--font-color);
@@ -283,17 +97,17 @@ header {
     
 }
 
-#index_card:hover {
+#home-page #index_card:hover {
     background-color: var(--nav-color);
 }
 
-#index_card img {
+#home-page #index_card img {
     width: 280px;
     height:150px;
     margin-bottom: 10px;
 }
 
-#index_card h3 {
+#home-page #index_card h3 {
     color: var(--two-color);
     font-weight:400;
     text-align:center;
@@ -301,7 +115,7 @@ header {
 
 }
 
-#index_card p {
+#home-page #index_card p {
     color: var(--two-color);
     font-weight:400;
     text-align:center;
@@ -309,117 +123,83 @@ header {
 
 }
 
-/*CALL TO ACTION*/
+/*** SOLUTIONS section ***/
 
-.cta {
-    background-color: var(--two-color);
-    color:var(--three-color);
-    
-}
-
-.cta-content {
-    width:80%;
-    margin: 0 auto;
+#home-page .solutions {
     text-align:center;
-    display:flex;
-    padding: 30px 0px;
-    justify-content: center;
+    color: var(--one-color);
 }
 
-.cta-content h1 {
-    margin-right: 20px;
-    margin-top: 10px;;
-    float:left;
+#home-page .solutions h1 {
+    margin-top:20px;
     font-weight:400;
 }
 
-.cta-content button {
-    padding: 10px 20px 20px;;
-    background-color: var(--yellow-color);
-    border:none;
-    color:var(--one-color);
-    transition: all .5s ease-in-out;
-}
-.cta-content button span {
-    position:relative;
-    top:6px;
-    right:5px;
+#home-page .solutions .index_cards-content p {
+    text-align:left;
+    padding: 20px 20px;
+    position: relative;
 }
 
-
-.cta-content button:hover {
-    background-color: var(--btnhover-color);
-}
-
-/*FOOTER*/
-
-footer {
-    background-color: var(--four-color);
-    color:var(--white-color);
-    font-weight: 400;
-    font-size: 13px;
-    color:var(--six-color);
-}
-
-.footer-content {
-    width:80%;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.footer-links {
-    padding: 30px 0;
+#home-page .solutions h3 {
+    margin-top: 10px;
     text-align: left;
+    position: relative;
 }
 
-.footer-links button {
-    margin: 10px 0;
-    padding: 10px 20px 15px;;
-    background-color: var(--yellow-color);
-    border:none;
-    color:var(--one-color);
-    transition: all .5s ease-in-out;
-    width:70%;
-}
-
-.footer-links button:hover {
-    background-color: var(--btnhover-color);
-}
-
-.footer-links button span {
-    font-size: 18px;
-    position:relative;
-    top:4px;
-    right:8px;
-    
-}
-
-.footer-links h4 {
+#home-page .solutions p {
     color: var(--two-color);
 }
 
-.footer-links a {
-    display: block;
-    text-decoration:none;
-    color: var(--six-color);
-    margin: 5px 0;
+/*** PRODUCTS section ***/
+
+#home-page .products {
+    text-align:center;
+    color: var(--one-color);
 }
 
-.rights {
-    background: var(--three-color);
-    
+#home-page .products h1 {
+    margin-top:20px;
+    font-weight:400;
 }
 
-.rights a {
-    color: var(--white-color);
+#home-page .products a {
     text-decoration: none;
 }
 
-.rights-content {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-    text-align:center;
-    font-size: 12px;
+#home-page .products .index_card img {
+    padding: 30px;
 }
+
+#home-page .products .index_card h3 {
+    margin-bottom:20px;
+}
+
+/*** ABOUT section ***/
+
+#home-page .about {
+    padding: 20px;
+    background: var(--three-color);
+}
+
+#home-page .about .about-content h1 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#home-page .about .about-content p {
+    margin-bottom: 20px;
+}
+
+#home-page .about .about-content iframe {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+

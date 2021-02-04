@@ -1,0 +1,98 @@
+/*** RESOURCES PAGE ***/
+
+#resources-page .resources-info {
+    width: 80%;
+    margin:20px auto;
+}
+
+#resources-page .resources-info h1{
+    font-weight:400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top:30px;
+}
+
+#resources-page .support {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#resources-page .support h1 {
+    font-weight:400;
+    font-size: 1.5rem;
+}
+
+#resources-page .resources-info {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+#resources-page .resources-info .accordion-item {
+    background: var(--four-color);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+#resources-page .resources-info .accordion-item .accordion-link {
+    font-size:1.2rem;
+    font-weight: 400;
+    color: var(--one-color);
+    text-decoration: none;
+    background: var(--four-color);
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+#resources-page .resources-info .accordion-item .accordion-link i {
+    color: var(--red-color);
+    padding: .5rem;
+}
+
+#resources-page .resources-info .accordion-item .accordion-link .ion-md-remove {
+    display:none;
+}
+
+#resources-page .resources-info .accordion-item .answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background: var(--three-color);
+    transition: max-height 650ms;
+}
+
+#resources-page .resources-info .accordion-item .answer:before {
+    content: "";
+    position: absolute;
+    width:.6rem;
+    height: 90%;
+    background: var(--yellow-color);
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+}
+
+#resources-page .resources-info .accordion-item .answer p{
+    color: var(--one-color);
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+#resources-page .resources-info .accordion-item:target .answer {
+    max-height: 20rem;
+}
+
+#resources-page .resources-info .accordion-item:target .accordion-link .ion-md-add {
+    display:none;
+}
+
+#resources-page .resources-info .accordion-item:target .accordion-link .ion-md-remove {
+    display:block;
+}

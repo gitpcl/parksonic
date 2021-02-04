@@ -1,0 +1,40 @@
+/* Error page*/
+@keyframes total {
+	0% {
+		opacity: 0;
+		transform: scaleY(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+}
+
+@keyframes cara_uno {
+	100% {
+		opacity: 1;
+		transform: skew(30deg, 0deg);
+	}
+}
+
+@keyframes cara_dos {
+	100% {
+		opacity: 1;
+		transform: skew(-30deg, 0deg);
+	}
+}
+
+@keyframes cara_tres {
+	100% {
+		opacity: 1;
+		transform: skew(30deg, 0deg);
+	}
+}
+
+@keyframes cara_cuatro {
+	100% {
+		opacity: 1;
+		transform: skew(-30deg, 0deg);
+	}
+}
