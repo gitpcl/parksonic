@@ -1,5 +1,4 @@
 /*** PROJECTS PAGE ***/
-
 #projects-page .banner {
     height:calc(60vh - 86px - 116px);
     width: 100vw;
@@ -55,6 +54,7 @@
     font-size: 2rem;
     background: var(--four-color);
     padding: 50px 0;
+    border-radius: 5px;
     
 }
 
@@ -89,6 +89,7 @@
 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    border-radius: 5px;
 }
 
 #projects-page .projects-content .cards .card img {
