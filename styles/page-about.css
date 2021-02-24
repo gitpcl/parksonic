@@ -47,7 +47,7 @@
 
 #about-page .story .story-content,
 #about-page .whatWeDo .whatWeDo-content {
-    width: 80%;
+    width:80%;
     padding: 20px;
     margin: 20px auto;
     background: var(--three-color);
@@ -68,6 +68,10 @@
     font-size:1rem;
 }
 
+#about-page .whatWeDo {
+    width:80%;
+}
+
 #about-page .whatWeDo .info-products {
     width: 80%;
     margin: 20px auto;
@@ -80,7 +84,7 @@
 }
 
 #about-page .explore-content {
-    width: 80%;
+    width:80%;
     margin: 0 auto;
     text-align: center;
 }

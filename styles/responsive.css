@@ -1,5 +1,22 @@
 @media (min-width: 600px) {
 
+    .header,
+    #home-page .index_cards-content,
+    #home-page .about .about-content,
+    #about-page .story-content,
+    #about-page .whatWeDo,
+    #about-page .info-products,
+    #about-page .explore-content,
+    #solutions-page .index_cards-content,
+    #projects-page .counter-content,
+    #projects-page .projects-content,
+    #resources-page .resources-info,
+    #resources-page .support,
+    footer .cta-content,
+    footer .footer-content {
+        max-width:1100px;
+    }
+
     #home-page .banner {
         height:calc(100vh - 164px);
     }
@@ -21,7 +38,6 @@
     }
 
     #home-page .index_cards-content {
-        width: 80%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap:10px;
         margin-top: 20px;
@@ -33,7 +49,6 @@
     }
 
     #home-page .about .about-content {
-        width: 80%;
         display:flex;
         margin: 0 auto;
         padding: 30px 0;
@@ -113,8 +128,6 @@
     }
 
     #resources-page .resources-info {
-        width: 80%;
-        max-width: 300rem;
         margin: 0 auto;
         padding: 0;
     }
