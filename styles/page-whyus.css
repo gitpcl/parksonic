@@ -1,0 +1,109 @@
+/*** ABOUT PAGE ***/
+
+#whyus-page .whyus_banner {
+    height:30vh;
+    width: 100vw;
+    position:relative;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-image: url("../assets/page-bg.jpg");
+    z-index:1;
+}
+
+#whyus-page .whyus_banner-content {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.90);
+    background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0) 100%);
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    text-align:center;
+
+}
+
+#whyus-page .whyus_banner-content span {
+    color: var(--three-color);
+    padding: 2% 0 0;
+    font-size: 60px;
+
+}
+
+#whyus-page .whyus_banner-content h2 {
+    color: var(--three-color);
+    font-weight:100;
+    margin-bottom: 10px;
+}
+
+#whyus-page .whyus_banner-content p {
+    color: var(--three-color);
+    font-weight:100;
+    width: 80%;
+}
+
+
+#whyus-page .wrapper {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#whyus-page .wrapper .whoAreWe {
+    margin-bottom: 20px;
+}
+
+#whyus-page .wrapper .whoAreWe h1 {
+    margin-bottom: 10px;
+}
+
+#whyus-page .wrapper .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+#whyus-page .wrapper .card {
+    padding: 20px;
+    background: var(--four-color);
+    border-radius: 5px;
+}
+
+
+#whyus-page .wrapper .card h3 {
+    color: var(--two-color);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#whyus-page .wrapper .benefits h3 {
+    color: var(--two-color);
+    margin: 20px 0;
+}
+
+#whyus-page .wrapper .benefits li {
+    margin: 10px 10px 5px 10px;
+}
+
+#whyus-page .wrapper .benefits li a {
+    color: var(--six-color);
+}
+
+#whyus-page .wrapper .alliences h3 {
+    color: var(--two-color);
+    margin: 20px 0;
+}
+
+#whyus-page .wrapper .alliences p {
+    margin-bottom: 10px;
+}
+
+#whyus-page .wrapper .alliences .partners {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+
