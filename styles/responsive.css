@@ -17,6 +17,11 @@
     #detectors-page .types,
     #signs-page .types,
     #software-page .types,
+    #consulting-page .wrapper,
+    #indoor-page .types,
+    #outdoor-page .types,
+    #multi-level-page .types,
+    #multi-lot-page .types,
     footer .cta-content,
     footer .footer-content {
         max-width:1100px;
@@ -192,6 +197,42 @@
     }
 
     #software-page .types .type img {
+        width: 400px;
+    }
+
+    #consulting-page .wrapper .pillars {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #indoor-page .types .type {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #indoor-page .types .type img {
+        width: 400px;
+    }
+
+    #outdoor-page .types .type {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #outdoor-page .types .type img {
+        width: 400px;
+    }
+
+    #multi-level-page .types .type {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #multi-level-page .types .type img {
+        width: 400px;
+    }
+
+    #multi-lot-page .types .type {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #multi-lot-page .types .type img {
         width: 400px;
     }
     

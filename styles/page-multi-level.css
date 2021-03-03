@@ -1,0 +1,103 @@
+/*** SOLUTIONS PAGE ***/
+
+#multi-level-page .banner {
+    height:calc(60vh - 86px - 116px);
+    width: 100vw;
+    position:relative;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-image: url("../assets/page-bg.jpg");
+    z-index:1;
+}
+
+#multi-level-page .banner-content {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.80);
+    background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0) 100%);
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    text-align:center;
+
+}
+
+#multi-level-page .banner-content span {
+    color: var(--three-color);
+    padding: 8% 0 1%;
+    font-size: 60px;
+
+}
+
+#multi-level-page .banner-content h2 {
+    color: var(--three-color);
+    font-weight:100;
+    margin-bottom: 10px;
+}
+#multi-level-page .banner-content p {
+    color: var(--three-color);
+    font-weight:100;
+}
+
+#multi-level-page .types {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#multi-level-page .types hr {
+    margin: 40px 0;
+    opacity: .3;
+}
+
+#multi-level-page .types h1 {
+    margin-bottom: 20px;
+    background: var(--yellow-color);
+    padding: 20px 30px;
+    font-weight: 400;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#multi-level-page .types .type {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+#multi-level-page .types .type h2 {
+    margin-bottom: 10px;
+}
+
+#multi-level-page .types .type p {
+    margin-bottom: 10px;
+}
+
+#multi-level-page .types .type h3 {
+    margin-bottom: 10px;
+    color: var(--one-color);
+}
+
+#multi-level-page .types .type ul {
+    margin-bottom: 20px;
+}
+
+#multi-level-page .types .type li {
+    margin-bottom: 5px;
+}
+
+#multi-level-page .types .type button {
+    padding: 20px 25px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    background: var(--yellow-color);
+}
+
+#multi-level-page .types .type img {
+    margin: 50px auto;
+    width: 100%;
+}

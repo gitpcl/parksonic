@@ -1,0 +1,79 @@
+/*** SOLUTIONS PAGE ***/
+
+#consulting-page .banner {
+    height:calc(60vh - 86px - 116px);
+    width: 100vw;
+    position:relative;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-image: url("../assets/page-bg.jpg");
+    z-index:1;
+}
+
+#consulting-page .banner-content {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.80);
+    background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0) 100%);
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    text-align:center;
+
+}
+
+#consulting-page .banner-content span {
+    color: var(--three-color);
+    padding: 8% 0 1%;
+    font-size: 60px;
+
+}
+
+#consulting-page .banner-content h2 {
+    color: var(--three-color);
+    font-weight:100;
+    margin-bottom: 10px;
+}
+#consulting-page .banner-content p {
+    color: var(--three-color);
+    font-weight:100;
+}
+
+#consulting-page .wrapper {
+    width: 80%;
+    margin: 30px auto;
+}
+
+#consulting-page .wrapper hr {
+    margin: 30px 0;
+    opacity: .3;
+}
+
+#consulting-page .wrapper .overview h2 {
+    margin: 20px 0;
+}
+
+#consulting-page .wrapper .pillars {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+#consulting-page .wrapper .pillars .pillar {
+    background: var(--four-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#consulting-page .wrapper .pillars .pillar h2 {
+    font-weight: 400;  
+    margin-bottom: 10px;
+}
+
+#consulting-page .wrapper .pillars .pillar a {
+    color: var(--six-color);
+}
