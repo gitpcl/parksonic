@@ -1,4 +1,4 @@
-/*** CARDS ***/
+
 
 #home-page .index_cards-content {
     margin: 0 auto;
@@ -16,12 +16,9 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 23px 0px;
+    border: 1px solid rgb(24, 24, 24,.10);
     border-radius: 15px;
     margin:30px;
-}
-
-#home-page .index_card:hover {
-    background-color: var(--nav-color);
 }
 
 #home-page .index_card img {
@@ -30,7 +27,7 @@
 }
 
 #home-page .index_card h3 {
-    color: var(--two-color);
+    color: var(--gray-color);
     font-weight:400;
     padding: 0 20px;
 }
@@ -42,17 +39,13 @@
 #home-page #index_card {
     padding: 20px 10px;
 
-    background-color: var(--font-color);
+    background-color: var(--gray-color);
     position: relative;
 
     border-radius: 20px;
     cursor:pointer;
     margin: 30px 0;
     
-}
-
-#home-page #index_card:hover {
-    background-color: var(--nav-color);
 }
 
 #home-page #index_card img {
@@ -62,7 +55,7 @@
 }
 
 #home-page #index_card h3 {
-    color: var(--two-color);
+    color: var(--gray-color);
     font-weight:400;
     text-align:center;
     margin:10px 0;
@@ -70,7 +63,7 @@
 }
 
 #home-page #index_card p {
-    color: var(--two-color);
+    color: var(--gray-color);
     font-weight:400;
     text-align:center;
     margin:10px 0;

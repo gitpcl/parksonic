@@ -11,7 +11,7 @@ footer {
 /*** FOOTER cta ***/
 
 footer .cta {
-    background-color: var(--two-color);
+    background-color: var(--gray-color);
     color:var(--three-color);
     
 }
@@ -35,9 +35,10 @@ footer .cta-content h1 {
 
 footer .cta-content a button {
     padding: 10px 20px 20px;;
-    background-color: var(--yellow-color);
+    background-color: var(--yellow-light-color);
     border:none;
-    color:var(--one-color);
+    border-radius: 5px;
+    color:var(--black-color);
     transition: all .5s ease-in-out;
     width: 100%;
 }
@@ -74,8 +75,9 @@ footer .footer-links:last-child {
 footer .footer-links a button {
     margin: 10px 0;
     padding: 15px 10px 15px;
-    background-color: var(--yellow-color);
+    background-color: var(--yellow-light-color);
     border:none;
+    border-radius: 5px;
     color:var(--one-color);
     transition: all .5s ease-in-out;
     width:100%;
@@ -95,7 +97,7 @@ footer .footer-links a button span {
 }
 
 footer .footer-links h4 {
-    color: var(--two-color);
+    color: var(--gray-color);
 }
 
 footer .footer-links a {

@@ -1,8 +1,51 @@
+/*** LATEST section ***/
+#home-page .latest .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    width: 80%;
+    margin: -10% auto 0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 23px 0px;
+    border: 1px solid rgb(24, 24, 24,.10);
+}
+
+#home-page .latest .wrapper .left {
+    background: var(--white-color);
+    padding: 50px;
+}
+
+
+#home-page .latest .wrapper .left h3 {
+    color: var(--gray-color);
+}
+
+#home-page .latest .wrapper .left h1 {
+    margin-bottom: 20px;
+}
+
+#home-page .latest .wrapper .left p {
+    margin-bottom: 20px;
+}
+
+#home-page .latest .wrapper .left button {
+    background: var(--yellow-light-color);
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+}
+
+
 /*** SOLUTIONS section ***/
 
 #home-page .solutions {
     text-align:center;
-    color: var(--one-color);
+    color: var(--gray-color);
+    margin-top: 50px;
 }
 
 #home-page .solutions h1 {
@@ -24,6 +67,90 @@
 
 #home-page .solutions p {
     color: var(--two-color);
+}
+/*** SERVICES section ***/
+
+#home-page .services {
+    color: var(--one-color);
+    max-width:1100px;
+    margin: 0 auto;
+}
+
+#home-page .services > h1 {
+    margin-top:20px;
+    font-weight:400;
+    text-align:center;
+}
+
+#home-page .services > p {
+    text-align:center;
+}
+
+#home-page .services .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 20px auto 0;
+    
+}
+
+#home-page .services .cards .card {
+    height: 300px;
+    position: relative;
+
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 23px 0px;
+}
+
+#home-page .services .cards .card:nth-child(1) {
+    border-radius: 5px;
+    /* border-radius: 5px 0 0 0; */
+    background-image:linear-gradient(to bottom, rgba(24, 24, 24, 0.52), rgba(24, 24, 24, 0.73)),
+    url('../assets/landing/banner-bg.jpg');
+
+    color: var(--white-color);
+}
+
+#home-page .services .cards .card:nth-child(2) {
+    border-radius: 5px;
+    /* border-radius: 0 5px 0 0; */
+    background-image:linear-gradient(to bottom, rgba(24, 24, 24, 0.52), rgba(24, 24, 24, 0.73)),
+    url('https://www.boschevsolutions.com/sites/default/files/styles/slider_image/public/2011_1503_Bosch%20EV%20Slider%20Graphics_no%20text_04.jpg?itok=dibs-aB2');
+
+    color: var(--white-color);
+}
+
+#home-page .services .cards .card:nth-child(3) {
+    border-radius: 5px;
+    /* border-radius: 0 0 0 5px; */
+    background-image:linear-gradient(to bottom, rgba(245, 209, 13), rgba(246, 231, 29));
+
+    color: var(--gray-color);
+}
+
+#home-page .services .cards .card:nth-child(4) {
+    border-radius: 5px;
+    /* border-radius: 0 0 5px 0; */
+    background-image:linear-gradient(to bottom, rgba(24, 24, 24, 0.52), rgba(24, 24, 24, 0.73)),
+    url('https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+
+    color: var(--white-color);
+}
+
+#home-page .services .cards .card:nth-child(1),
+#home-page .services .cards .card:nth-child(2), 
+#home-page .services .cards .card:nth-child(3), 
+#home-page .services .cards .card:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home-page .services .cards .card .card-content {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
 }
 
 /*** PRODUCTS section ***/

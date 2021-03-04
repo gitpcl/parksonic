@@ -1,14 +1,21 @@
 :root {
-    --one-color:#000000;
-    --two-color:#212121;
-    --three-color: #FAFAFA;
-    --four-color:#F5F5F5;
-    --five-color: #AEAEAE;
-    --six-color: #969696;
-    --blue-color:#2A77A6;
-    --red-color:#CA4A44;
-    --green-color:#06B94B;
-    --yellow-color:#EFD901;
+    --one-color:rgb(0, 0, 0);
+    --two-color:rgb(33, 33, 33);
+    --three-color: rgb(250, 250, 250);
+    --four-color:rgb(245, 245, 245);
+    --five-color: rgb(174, 174, 174);
+    --six-color: rgb(150, 150, 150);
+    --blue-color:rgb(42, 119, 166);
+    --red-color:rgb(202, 74, 68);
+    --green-color:rgb(6, 185, 75);
+    --yellow-color:rgb(239, 217, 1);
+
+    --white-color: rgb(255, 255, 255);
+    --yellow-light-color: rgb(246, 231, 29);
+    --mustard-color: rgb(245, 209, 13);
+    --gray-color: rgb(24, 24, 24);
+    --black-color: rgb(2, 2, 2);
+
 }
 
 * {
@@ -19,14 +26,14 @@
 }
 
 body {
-    background-color: var(--three-color);
+    background-color: var(--white-color);
     font-family: "Montserrat", sans-serif;
-    color: var(--one-color);
+    color: var(--gray-color);
 }
 
 main {
     flex-grow:1;
-    background: white;
+    background: var(--white-color);
 }
 
 a {
@@ -35,9 +42,9 @@ a {
     cursor:pointer;
 }
 
-h3 {
-    color:var(--three-color);
-}
+/* h3 {
+    color:var(--white-color);
+} */
 
 h4 {
     margin-bottom: 10px;

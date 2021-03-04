@@ -26,19 +26,19 @@
 }
 
 #projects-page .banner-content span {
-    color: var(--three-color);
+    color: var(--white-color);
     padding: 8% 0 1%;
     font-size: 60px;
 
 }
 
 #projects-page .banner-content h2 {
-    color: var(--three-color);
+    color: var(--white-color);
     font-weight:100;
     margin-bottom: 10px;
 }
 #projects-page .banner-content p {
-    color: var(--three-color);
+    color: var(--white-color);
     font-weight:100;
 }
 
@@ -55,11 +55,13 @@
     background: var(--four-color);
     padding: 50px 0;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 23px 0px;
+    border: 1px solid rgb(24, 24, 24,.10);
     
 }
 
 #projects-page .counter-content .counters:hover {
-    background: var(--yellow-color);
+    background: var(--yellow-light-color);
 }
 
 #projects-page .counter-content .counters h4 {

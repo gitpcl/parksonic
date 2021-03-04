@@ -1,13 +1,15 @@
-@media (min-width: 600px) {
+@media (min-width: 750px) {
 
     .header,
     #home-page .index_cards-content,
+    #home-page .latest .wrapper,
     #home-page .about .about-content,
     #about-page .story-content,
     #about-page .whatWeDo,
     #about-page .info-products,
     #about-page .explore-content,
     #solutions-page .index_cards-content,
+    #solutions-page .advantages,
     #projects-page .counter-content,
     #projects-page .projects-content,
     #resources-page .resources-info,
@@ -39,6 +41,27 @@
         padding: 1% 0 1%;
     }
 
+    #home-page .latest .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        margin: -7% auto 0;
+    }
+
+    #home-page .latest .wrapper .right {
+        background: url('https://bakery-square.com/wp-content/uploads/2015/01/neighborhood-header-1080x400.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 5s;
+    
+        animation-name: latest;
+        animation-direction: alternate-reverse;
+        animation-duration: 45s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+    }
+
     #home-page .solutions a .index_card {
         height:450px;
     }
@@ -48,10 +71,35 @@
     }
 
     #home-page .index_cards-content {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         gap:10px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+
+    #home-page .services .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 23px 0px;
+        border: 1px solid rgb(24, 24, 24,.10);
+        width: 100%;
+    }
+
+    #home-page .services .cards .card:nth-child(1) {
+        border-radius: 5px 0 0 0;
+    }
+    
+    #home-page .services .cards .card:nth-child(2) {
+        border-radius: 0 5px 0 0;
+    }
+    
+    #home-page .services .cards .card:nth-child(3) {
+        border-radius: 0 0 0 5px;
+    }
+    
+    #home-page .services .cards .card:nth-child(4) {
+        border-radius: 0 0 5px 0;
     }
 
     #home-page .about {
@@ -67,7 +115,7 @@
 
     #projects-page .counter-content {
         width:80%;
-        margin: 0 auto;
+        margin: 20px auto 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
@@ -117,7 +165,7 @@
     }
 
     #about-page .whatWeDo .info-products {
-        margin:0;
+        margin:0 auto;
         width: 80%;
     }
 
@@ -154,16 +202,39 @@
         padding: 20px;
     }
 
+    #solutions-page .solutions p {
+        max-width: 800px;
+    }
+
     #solutions-page a .index_card {
         margin:5px;
     }
 
-    #solutions-page .index_cards-content {
-        width: 80%;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    #solutions-page .solutions .index_cards-content {
+        max-width: 1100px;
+        grid-template-columns: repeat(3,1fr);
         gap:10px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    #solutions-page .advantages {
+        max-width: 1100px;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+        margin: 0 auto 50px;
+    }
+
+    #solutions-page .advantages .square img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    #solutions-page .advantages #img-hidden {
+        display: inline;
     }
 
     #whyus-page .wrapper .cards {
