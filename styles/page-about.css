@@ -42,6 +42,11 @@
     width: 80%;
 }
 
+#about-page .story .story-content,
+#about-page .whatWeDo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 
 
 #about-page .story .story-content,
@@ -57,7 +62,7 @@
 #about-page .story .story-content h1,
 #about-page .whatWeDo .whatWeDo-content h1 {
     font-weight: 400;
-    margin: 20px 0;
+    margin: 0 0 20px;
 }
 
 #about-page .whatWeDo .whatWeDo-content ul li {
@@ -67,10 +72,6 @@
 #about-page .whatWeDo .whatWeDo-content ul li span{
     vertical-align: middle;
     font-size:1rem;
-}
-
-#about-page .whatWeDo {
-    width:80%;
 }
 
 #about-page .whatWeDo .info-products {
@@ -91,9 +92,6 @@
 }
 
 #about-page .explore .explore-content .explore_cards {
-    display:grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
     margin: 20px 0;
     display:grid;
     grid-template-columns: repeat(1, 1fr);
