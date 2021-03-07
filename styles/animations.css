@@ -2,16 +2,16 @@
 
 @keyframes latest {
 	0% {
-		background-image: url('../assets/outdoor-cam-1.png');
+		background-image: url('../assets/outdoor-cam-1.webp');
 	}
 	30% {
-		background-image: url('../assets/outdoor-cam-2.png');
+		background-image: url('../assets/outdoor-cam-2.webp');
 	}
 	60% {
-		background-image: url('../assets/outdoor-cam-3.png');
+		background-image: url('../assets/outdoor-cam-3.webp');
 	}
 	100% {
-		background-image: url('../assets/outdoor-cam-4.png');
+		background-image: url('../assets/outdoor-cam-4.webp');
 	}
 }
 

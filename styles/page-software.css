@@ -6,7 +6,7 @@
     position:relative;
     background-size:cover;
     background-position: 50% 50%;
-    background-image: url("../assets/page-bg.jpg");
+    background-image: url("../assets/page-bg.webp");
     z-index:1;
 }
 

@@ -47,7 +47,7 @@
     }
 
     #home-page .latest .wrapper .right {
-        background: url('https://bakery-square.com/wp-content/uploads/2015/01/neighborhood-header-1080x400.jpg');
+        background: url('https://bakery-square.com/wp-content/uploads/2015/01/neighborhood-header-1080x400.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -324,7 +324,7 @@
     }
 
     footer .footer-content {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(5,1fr);
         gap: 20px;
     }
 
